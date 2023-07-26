@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import "./App.css";
 
 const App = () => {
-  return <h1>Hello Word!</h1>;
+  // let message = 'Hello Word!'
+  const [message, setMessage] = useState('oi')
+  return (
+    <>
+    <div className="container">{message}</div>
+    <button onClick={() => setMessage("heloooooo")}>
+      mudar mensagem
+    </button>
+    </>
+  );
 };
 
 export default App;
